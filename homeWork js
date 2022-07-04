@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+//sentence in reverse
+
+    // var temp ="";
+    // var input = prompt("Enter");
+    // var j = input.split(" ");
+    //     for(var i=j.length-1; i >=0 ; i-=1){
+    //         temp+=j[i];
+    //         temp+=[" "];
+    //     }
+    //     document.write(temp);
+
+
+// world inside world
+
+// var word = prompt("Enter the magic word");
+// var place = prompt("what place");
+// var length = prompt("how long?");
+// var res = word.slice(place, length);
+
+// console.log(res);
+
+// email validation
+
+// var mail = prompt("enter email");
+// var res = mail.split("@");
+
+// if(res.length > 2){
+//     alert("invildmail");
+// }else {
+//     alert("ok")
+// }
+
+
+
+
+        // book founder from arry
+
+// var arry = ["one", "two", "three", "four", "five"];
+// var book = prompt("enter book");
+// var bookFound = false;
+// for(var i = 0; i < arry.length-1; i++){
+//     if(arry[i] == book){
+//         var bookFound = true;
+//     }
+// }
+// if(bookFound == true){
+//     console.log("book found");
+// }else{
+//     console.log("book not found");
+// }
+
+// getting num from user and giving back the biggest digit
+
+// var number = prompt("enterNumbers");
+// var [numbers] = number.split(0, number.length);
+// var bigest = numbers[0];
+// for(var i = 1; i < numbers.length-1; i++){
+//     if(numbers[i] > bigest){
+//         bigest = numbers[i];
+//     }
+// }
+// console.log(bigest);
+
+//local time +8h - 20m
+
+// var time = new Date();
+// var hours = time.getHours()+8;
+// var minutes = time.getMinutes()-20+60;
+
+// console.log(hours, minutes);
+
+// loterry
+
+// var myArr = [];
+// for(i=0; i<5; i++){
+//     myArr.push(parseInt(Math.random()*100))
+// }
+// console.log(myArr);
+// console.log("and your lucky number is:"+ (parseInt(Math.random()*10)));
+
+// time 
+
+// var watch = new Date();
+// var hours = watch.getHours();
+// var minutes = watch.getMinutes();
+// var seconds = watch.getSeconds();
+
+// document.write(hours + ":" + minutes + ":" + seconds);
+
+
+        </script>
+</body>
+</html>
