@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1><u>foot your details!!!</h1></u>
+        <form method="post" action
+        <fieldset>
+        <input type="text" id="fullName" name="fullName" value="" placeholder="fullname"><br/><br/>
+        <input type="text" id="email" name="Email" value="" placeholder="Email"><br/><br/>
+        <input type="password" id="password" value="" name="upass" placeholder="password"> <br/><br/>
+    </fieldset>
+        <button onClick="check()"  type="" value="enter">send</button>
+        </form>
+        <div id="login" ></div>
+    </center>
+</body>
+<script>
+    var fullName = document.getElementById("fullName");
+    var email = document.getElementById("email");
+    var password = document.getElementById("password");
+
+    var goodUser = true;
+
+    function check(){
+        if(fullName.value == 0 || email.value == 0 || password.value == 0){
+            goodUser = false;
+        }
+        if(goodUser == true){
+            document.write(fullName.value, email.value, password.value);
+        } else {
+            alert("there was an error try again");
+        }
+    }
+
+</script>
+</html>

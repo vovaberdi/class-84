@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1><u>cal</u</h1>
+        <fieldset><legend>cal</legend>
+                <input type="number" value="" id="fNum" placeholder="enterNum">
+                <input type="number" value="" id="sNum" placeholder="enterNum"><br/>
+                <button type="" onClick="plus()" value="">+</button><br/>
+                <button type="" onClick="min()" value="enter">-</button><br/>
+                <button type="" onClick="devid()" value="enter">/</button><br/>
+                <button type="" onClick="multi()" value="enter">*</button>
+                <div>solution: <span id="cal"></span></div>
+        </fieldset>
+    </center>
+</body>
+<script>
+    var num1 = document.getElementById("fNum");
+    var num2 = document.getElementById("sNum");
+    var cal = document.getElementById("cal");
+    
+    function plus(){
+        var answer = Number(num1.value) + Number(num2.value);
+        cal.innerHTML = answer;
+    }
+    function min(){
+        var answer = Number(num1.value) - Number(num2.value);
+        cal.innerHTML = answer;
+    }
+    function multi(){
+        var answer = Number(num1.value) * Number(num2.value);
+        cal.innerHTML = answer;
+    }
+    function devid(){
+        var answer = Number(num1.value) / Number(num2.value);
+        cal.innerHTML = answer;
+    }
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>zeev salary</h1>
+        <hr />
+        <input type="number" id="userGuess" name="guess" />
+        <input type="button" value="10%" onClick="checkMe()" />
+        <input type="button" value="20%" onClick="checkMe2()" />
+        <br /><br /><br />
+        <div id="res"></div>
+            </center>
+</body>
+<script>
+            var userGuess = document.getElementById("userGuess");
+            var result = document.getElementById("res");
+            
+            function checkMe(){
+                
+        if(userGuess.value != 0){
+            res.innerHTML = userGuess.value*0.10;
+        }else{
+            res.innerHTML = "err";
+        }
+        }
+        function checkMe2(){
+                
+                if(userGuess.value != 0){
+                    res.innerHTML = (userGuess.value)-(userGuess.value*0.20);
+                }else{
+                    res.innerHTML = "err";
+                }
+                }
+            
+</script>
+</html>

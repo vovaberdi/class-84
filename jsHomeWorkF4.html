@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1><u>login</u></h1>
+        <form>
+        <fieldset><legend>login</legend>
+                <input type="text" value="" id="person" placeholder="enterName"><br/><br/>
+                <input type="number" value="" id="age" placeholder="age"><br/><br/>
+                <select id="city">
+                    <option value="telAviv">Tel-aviv</option>
+                    <option value="haifa">haifa</option>
+                    <option value="rome">Rome</option>
+                    <option value="paris">Paris</option>
+                </select><br/><br/>
+                <input type="text" value="" id="address" placeholder="enterAdress"><br/><br/>
+                <input type="radio" id="gender" name="gender" value="M" />Male
+                <input type="radio" id="gender" name="gender" value="F" />Female </label><br>
+                <textarea type="text" rows="4" cols="50" id="hobbi"></textarea> <br><br/>
+                <button type="button" onClick="save()"  value="">save</button><br/>
+                <div> <span id="log"></span></div>
+        </fieldset>
+        </form>
+    </center>
+</body>
+<script>
+    var fName = document.getElementById("person");
+    var age = document.getElementById("age");
+    var city = document.getElementById("city");
+    var address = document.getElementById("address");
+    var gender = document.getElementById("gender");
+    var hobbi = document.getElementById("hobbi");
+    var log = document.getElementById("log");
+    
+
+    
+
+    function save(){
+        var personData = new Array(fName, age, city, address, gender, hobbi);
+        var good = true;
+        log.innerHTML = fName.value + " " + age.value+ " " +city.value + " " + address.value+ " " + gender.value + " " + gender.value + " " + hobbi.value;
+        for(i=0; i<personData.length; i++){
+            if(personData[i].value == "" ){
+                good = false;
+                alert("there was an err");
+                break;
+            } 
+        }
+        if(good == true){
+            window.location = "https://ionicframework.com";
+        }
+
+    }
+</script>
+</html>

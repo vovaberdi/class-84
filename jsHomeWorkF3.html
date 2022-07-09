@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1><u>login</u></h1>
+        <form>
+        <fieldset><legend>login</legend>
+                <input type="text" value="" id="fName" placeholder="enterName"><br/>
+                <input type="password" value="" id="password" placeholder="enterPass"><br/>
+                <input type="checkbox" value="" id="checkbox" placeholder="Remember me">Remember me <br/>
+                <button type="button" onClick="user()"  value="">login</button><br/>
+                <div> <span id="log"></span></div>
+        </fieldset>
+        </form>
+    </center>
+</body>
+<script>
+    var userName = document.getElementById("fName");
+    var passWord = document.getElementById("password");
+    var checkbox = document.getElementById("checkbox");
+    var log = document.getElementById("log");
+
+    function user(){
+        if(checkbox.checked){
+            alert("you have been remmbered "+ userName.value);
+        };
+        if(userName.value == "good" && passWord.value == "day"){
+            window.location = "file:///Users/vladimirberdibekov/Desktop/class/js/afterLogedIn.html";
+        } else {
+            log.innerHTML = "you have no permit."
+        }
+    }
+</script>
+</html>

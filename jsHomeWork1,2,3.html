@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <img width="50%" onMouseover="howMany()" src="https://images.pexels.com/photos/144249/sailing-boat-sail-holiday-holidays-144249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+        <h1 id="txt"><b>You are busted! fucker</b></h1>
+        <input type="text" id="text" rows="6" cols="80" value="" onBlur="hey()" onkeypress="fun()"  placeholder="whatHappened">
+</center>
+</body>
+<script>
+    var text = document.getElementById("text");
+    var txt = document.getElementById("txt");
+    var color = false;
+    function fun(){
+        colors();
+        if(color == false){
+            color = true;
+        } else {
+            color = false;
+        }
+    }
+    function colors(){
+        if(color == true){
+            txt.style.color = "red";
+        }else{
+            txt.style.color = "blue";
+        }
+    }
+    function hey(){
+        alert(text.value);
+    }
+    var times ="";
+    function howMany() {
+        console.log(times);
+        times++;
+    }
+
+    window.onunload = function(){alert(times);}
+
+</script>
+</html>
