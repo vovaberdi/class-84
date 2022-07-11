@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <fieldset><legend>tavala</legend>
+            
+                <input type="text" value="" name="" id="mission" placeholder="missions">
+                <input type="text" name="" value="" id="uName" placeholder="name">
+                <input type="date" name="" value="" id="data" placeholder="">
+                <button type="button" class="btn btn-primary" name="send" value="" id="btn" onClick="send()" placeholder="send">Add</button><br/><br/><hr/>
+                <div class="container">
+                <table class="table table-striped table-bordered  " id="data1" >
+                    <thead>
+                        <tr>
+                <th>#</th>
+                <th>mission</th>
+                <th>name</th>
+                <th>date</th>
+                <th>did</th>
+            </tr>
+            </thead>
+            <tbody id="data2"></tbody>
+        </table>
+    </div>
+    </center>
+</body>
+<script>
+    var mission = document.getElementById("mission");
+    var uName = document.getElementById("uName");
+    var data = document.getElementById("data");
+    var checkbox = document.getElementById("did");
+
+
+
+    function send(){
+        var time = new Date();
+        var timeNow = setInterval(time.getTime(),1000 );
+
+        var dateSlot="";
+        dateSlot += "<tr>" ;
+        dateSlot += `<td> ${timeNow} </td>`;
+        dateSlot += "<td>" + mission.value + "</td>";
+        dateSlot += "<td>" + uName.value + "</td>"; 
+        dateSlot += "<td>" + data.value + "</td>";
+        dateSlot += "<td> <input type='checkbox' /></td>"; 
+        dateSlot += "</tr>" ; 
+        document.getElementById("data2").innerHTML +=  dateSlot ;
+    }
+
+
+
+</script>
+</html>
